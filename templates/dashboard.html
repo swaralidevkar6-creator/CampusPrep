@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body> 
+    <nav>
+    <h2>CampusPrep</h2>
+
+    <a href="/dashboard">Dashboard</a>
+    <a href="/companies">Companies</a>
+    <a href="/quiz">Quiz</a>
+    <a href="/logout">Logout</a>
+</nav>
+
+<div class="container">
+
+<h1>Welcome to CampusPrep Dashboard</h1>
+
+<a href="/companies">
+<button>View Companies</button>
+</a>
+
+<br>
+
+<a href="/quiz">
+<button>Start Quiz</button>
+</a>
+
+<br>
+<a href="/interview">
+    <button>Interview Preparation</button>
+</a>
+<br>
+<a href="/">
+<button>Home</button>
+</a>
+
+</div>
+<footer>
+    <p>© 2026 CampusPrep | Placement Preparation Portal</p>
+</footer>
+
+</body>
+</html>
