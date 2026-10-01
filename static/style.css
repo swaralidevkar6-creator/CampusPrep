@@ -1,102 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    background:#f4f7fc;
+    color:#333;
 }
 
-.container{
-    margin-top: 150px;
+/* Navbar */
+
+.navbar{
+    background:#3949ab;
+    color:white;
+    padding:15px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-h1{
-    color: #333;
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:17px;
+}
+
+.nav-links a:hover{
+    color:#ffeb3b;
+}
+
+.nav-btn{
+    background:white;
+    color:#3949ab !important;
+    padding:8px 15px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Hero Section */
+
+.hero{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#1a237e;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    color:#3949ab;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* Buttons */
+
+.hero-buttons{
+    margin-top:30px;
 }
 
 button{
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f6ff;
-    text-align: center;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
 }
 
-h1 {
-    color: #1a237e;
-    margin-top: 40px;
+.primary-btn{
+    background:#3949ab;
+    color:white;
 }
 
-button {
-    width: 200px;
-    padding: 12px;
-    margin: 10px;
-    border: none;
-    border-radius: 8px;
-    background-color: #3949ab;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+.primary-btn:hover{
+    background:#1a237e;
 }
 
-button:hover {
-    background-color: #1a237e;
+.secondary-btn{
+    background:#e8eaf6;
+    color:#3949ab;
 }
 
-.container {
-    background: white;
-    width: 50%;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px gray;
-}
-nav {
-    background-color: #3949ab;
-    padding: 15px;
+.secondary-btn:hover{
+    background:#c5cae9;
 }
 
-nav h2 {
-    color: white;
-    display: inline;
-    margin-right: 40px;
+/* Features */
+
+.features{
+    padding:60px 30px;
+    text-align:center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 18px;
+.features h2{
+    margin-bottom:40px;
+    color:#1a237e;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-}
-footer {
-    margin-top: 40px;
-    padding: 15px;
-    text-align: center;
-    background-color: #3949ab;
-    color: white;
-}
-.company-card {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 70%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px gray;
+.feature-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
 }
 
-.company-card h2 {
-    color: #3949ab;
+.feature-card{
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.feature-card h3{
+    margin-bottom:15px;
+    color:#3949ab;
+}
+
+.feature-card p{
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+.feature-card a{
+    text-decoration:none;
+    color:#3949ab;
+    font-weight:bold;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+/* About */
+
+.about-section{
+    background:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.about-section h2{
+    color:#1a237e;
+    margin-bottom:20px;
+}
+
+.about-section p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Company Cards */
+
+.company-card{
+    background:white;
+    padding:20px;
+    margin:20px auto;
+    width:80%;
+    border-radius:10px;
+    box-shadow:0 0 8px gray;
+}
+
+.company-card h2{
+    color:#3949ab;
+}
+
+/* Footer */
+
+footer{
+    background:#3949ab;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 }

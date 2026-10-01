@@ -1,42 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>CampusPrep</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusPrep - Placement Preparation Portal</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-<nav>
-    <h2>CampusPrep</h2>
+<nav class="navbar">
 
-    <a href="/login">Login</a>
-    <a href="/register">Register</a>
+    <div class="logo">
+        CampusPrep
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/companies">Companies</a>
+        <a href="/quiz">Quiz</a>
+        <a href="/interview">Interview</a>
+        <a href="/login">Login</a>
+        <a href="/register" class="nav-btn">Register</a>
+    </div>
+
 </nav>
 
 
-<div class="container">
+<section class="hero">
 
-    <h1>Welcome to CampusPrep</h1>
+    <div class="hero-content">
 
-    <h2>Placement Preparation Portal</h2>
+        <h1>Prepare Today. Get Placed Tomorrow.</h1>
+
+        <h2>Your Complete Placement Preparation Platform</h2>
+
+        <p>
+            CampusPrep helps students prepare for campus placements with
+            company information, aptitude quizzes, interview questions
+            and placement preparation resources.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/register">
+                <button class="primary-btn">Get Started</button>
+            </a>
+
+            <a href="/login">
+                <button class="secondary-btn">Student Login</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <h2>Everything You Need for Placement Preparation</h2>
+
+    <div class="feature-container">
+
+
+        <div class="feature-card">
+
+            <h3>🏢 Company Information</h3>
+
+            <p>
+                Explore placement information about companies such as
+                TCS, Infosys, Wipro, Accenture and Capgemini.
+            </p>
+
+            <a href="/companies">Explore Companies</a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>📝 Aptitude Quiz</h3>
+
+            <p>
+                Practice aptitude and technical questions and instantly
+                check your quiz score.
+            </p>
+
+            <a href="/quiz">Start Quiz</a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>💼 Interview Preparation</h3>
+
+            <p>
+                Prepare for HR and technical interviews using commonly
+                asked interview questions and useful preparation tips.
+            </p>
+
+            <a href="/interview">Prepare Now</a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>🎯 Placement Ready</h3>
+
+            <p>
+                Improve your technical knowledge, aptitude skills and
+                interview confidence for campus recruitment.
+            </p>
+
+            <a href="/register">Join CampusPrep</a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="about-section">
+
+    <h2>Why CampusPrep?</h2>
 
     <p>
-        Prepare for your placement journey with company information,
-        aptitude quiz and interview preparation.
+        Placement preparation resources are often scattered across
+        different websites. CampusPrep brings important placement
+        preparation resources together in one simple and student-friendly
+        platform.
     </p>
 
-    <br>
+</section>
 
-    <a href="/register">
-        <button>Get Started</button>
-    </a>
 
-</div>
 <footer>
-    <p>© 2026 CampusPrep | Placement Preparation Portal</p>
+
+    <p>
+        © 2026 CampusPrep | Placement Preparation Portal
+    </p>
+
+    <p>
+        Built for Students • Learn • Practice • Prepare
+    </p>
+
 </footer>
+
 
 </body>
 
