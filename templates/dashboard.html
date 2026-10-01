@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusPrep Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body> 
-    <nav>
-    <h2>CampusPrep</h2>
 
-    <a href="/dashboard">Dashboard</a>
-    <a href="/companies">Companies</a>
-    <a href="/quiz">Quiz</a>
-    <a href="/logout">Logout</a>
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">CampusPrep</div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/companies">Companies</a>
+        <a href="/quiz">Quiz</a>
+        <a href="/interview">Interview</a>
+        <a href="/logout">Logout</a>
+    </div>
+
 </nav>
 
-<div class="container">
+<section class="hero">
 
-<h1>Welcome to CampusPrep Dashboard</h1>
+    <h1>Welcome to CampusPrep Dashboard</h1>
 
-<a href="/companies">
-<button>View Companies</button>
-</a>
+    <p>
+        Access placement resources, company information,
+        aptitude quizzes and interview preparation materials.
+    </p>
 
-<br>
+</section>
 
-<a href="/quiz">
-<button>Start Quiz</button>
-</a>
+<section class="features">
 
-<br>
-<a href="/interview">
-    <button>Interview Preparation</button>
-</a>
-<br>
-<a href="/">
-<button>Home</button>
-</a>
+    <h2>Student Dashboard</h2>
 
-</div>
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <h3>🏢 Companies</h3>
+            <p>Explore company details and recruitment information.</p>
+            <a href="/companies">View Companies</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>📝 Aptitude Quiz</h3>
+            <p>Practice aptitude questions and improve your skills.</p>
+            <a href="/quiz">Start Quiz</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>💼 Interview Prep</h3>
+            <p>Prepare for HR and technical interviews.</p>
+            <a href="/interview">Interview Preparation</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>🚪 Logout</h3>
+            <p>Securely logout from your account.</p>
+            <a href="/logout">Logout</a>
+        </div>
+
+    </div>
+
+</section>
+
 <footer>
     <p>© 2026 CampusPrep | Placement Preparation Portal</p>
 </footer>
