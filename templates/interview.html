@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Interview Preparation</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
+
+<nav>
+    <h2>CampusPrep</h2>
+
+    <a href="/dashboard">Dashboard</a>
+    <a href="/companies">Companies</a>
+    <a href="/quiz">Quiz</a>
+    <a href="/interview">Interview</a>
+    <a href="/logout">Logout</a>
+</nav>
 
 <div class="container">
 
-<h1>Interview Preparation</h1>
+    <h1>Interview Preparation</h1>
 
+    <p>
+        Practice the most frequently asked HR and Technical Interview Questions.
+    </p>
 
-<h3>Technical Questions</h3>
+    <div class="company-card">
+        <h2>👤 HR Interview Questions</h2>
 
-<ul>
-    <li>What is OOP concept?</li>
-    <li>Difference between Java and Python?</li>
-    <li>What is Database?</li>
-    <li>Explain SQL joins.</li>
-</ul>
+        <p>• Tell me about yourself.</p>
+        <p>• Why should we hire you?</p>
+        <p>• What are your strengths?</p>
+        <p>• What are your weaknesses?</p>
+        <p>• Where do you see yourself in 5 years?</p>
+    </div>
 
+    <div class="company-card">
+        <h2>💻 Technical Interview Questions</h2>
 
-<h3>HR Questions</h3>
+        <p>• What is Python?</p>
+        <p>• Difference between List and Tuple?</p>
+        <p>• What is Flask?</p>
+        <p>• What is a Database?</p>
+        <p>• Explain your CampusPrep project.</p>
+    </div>
 
-<ul>
-    <li>Tell me about yourself.</li>
-    <li>What are your strengths?</li>
-    <li>Why should we hire you?</li>
-    <li>Where do you see yourself in 5 years?</li>
-</ul>
+    <div class="company-card">
+        <h2>🎯 Interview Tips</h2>
 
-
-<h3>Preparation Tips</h3>
-
-<ul>
-    <li>Practice coding daily</li>
-    <li>Improve communication skills</li>
-    <li>Research about company before interview</li>
-</ul>
-
-
-<br>
-
-<a href="/dashboard">
-<button>Back to Dashboard</button>
-</a>
-
+        <p>✔ Be confident</p>
+        <p>✔ Maintain eye contact</p>
+        <p>✔ Speak clearly</p>
+        <p>✔ Explain your project properly</p>
+        <p>✔ Be honest in your answers</p>
+    </div>
 
 </div>
 
-</body>
+<footer>
+    <p>© 2026 CampusPrep | Placement Preparation Portal</p>
+</footer>
 
+</body>
 </html>
